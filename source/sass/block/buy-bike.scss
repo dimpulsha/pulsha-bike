@@ -1,0 +1,47 @@
+.buy-bike {
+  min-height: 825px;
+  background-color: $backgfound-dark;
+  background-image: url("../img/bg/head-dt@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg/head-dt@2x.jpg");
+  }
+}
+
+.buy-bike__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 874px;
+  margin: 0 auto;
+}
+
+.buy-bike__text-content {
+  width: 50%;
+  margin-top: 307px;
+}
+
+.buy-bike__form {
+  margin-top: 260px;
+  width: 50%;
+}
+
+.buy-bike__head-text {
+  margin: 0;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 64px;
+  letter-spacing: -0.005em;
+  color: $text-inversion;
+}
+
+.buy-bike__text{
+  margin: 0;
+  margin-top: 24px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+  color: $text-inversion-semi-dark;
+}

@@ -1,0 +1,52 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 327px;
+  margin-left: auto;
+}
+
+.contact-form__head{
+  margin: 0;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -0.005em;
+  color: $text-inversion;
+}
+
+.contact-form__item {
+  display: block;
+  margin-top: 20px;
+  height: 48px;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.contact-form__input {
+  padding-left: 29px;
+  border: 1px solid $border;
+  font-size: 15px;
+  line-height: 24px;
+  color: $text-input;
+}
+
+
+
+.contact-form__button {
+  // display: flex;
+  // align-items: center;
+  display: block;
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+  min-height: 51px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 21px;
+  background-color: $backgfound-accented;
+  border: none;
+  cursor: pointer;
+}
+

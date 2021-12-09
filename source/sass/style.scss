@@ -1,3 +1,19 @@
-h1 {
-  color: red;
-}
+//global
+@import "./global/fonts.scss";
+@import "./global/view-port.scss";
+@import "./global/color.scss";
+@import "./global/global-settings.scss";
+
+// pages
+@import "./block/body.scss";
+@import "./block/page.scss";
+@import "./block/content.scss";
+@import "./block/header.scss";
+@import "./block/nav.scss";
+@import "./block/menu-list.scss";
+@import "./block/buy-bike.scss";
+@import "./block/contact-form.scss";
+//
+@import "./block/map.scss";
+
+

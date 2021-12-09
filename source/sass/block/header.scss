@@ -1,0 +1,14 @@
+.header {
+  position: relative;
+  width: 874px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 19px 0 19px;
+  border-bottom: 1px solid $borderline;
+}
+
+.header__logo{
+  position: absolute;
+  left: 0;
+  bottom: -216px;
+}

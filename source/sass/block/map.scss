@@ -1,0 +1,27 @@
+.map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.map__header {
+  margin: 0;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.005em;
+  color: $text-head;
+}
+
+.map__text {
+  margin: 0;
+  font-size: 17px;
+  line-height: 31px;
+  color: $text-semi-light;
+}
+
+.map__links-item {
+  font-size: 16px;
+  line-height: 22px;
+  color: $text-light;
+}

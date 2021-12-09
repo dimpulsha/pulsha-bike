@@ -1,0 +1,19 @@
+.page {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+}
+// .page__header-wrapper{
+//   max-width: 1150px;
+// }
+
+.page__header-wrapper {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+}
+
+.page__content {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  // margin-top: 62px;
+}
