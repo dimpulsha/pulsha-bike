@@ -5,10 +5,28 @@
   margin: 0 auto;
   padding: 0 19px 0 19px;
   border-bottom: 1px solid $borderline;
+
+  @media (max-width: $tablet-max-width) {
+    width: 100%;
+    padding: 0;
+    border-bottom: none;
+  }
 }
 
 .header__logo{
   position: absolute;
   left: 0;
-  bottom: -216px;
+  // bottom: -216px;
+  top: 312px;
+
+  @media (max-width: $tablet-max-width) {
+    left: 21px;
+    top: 20px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    left: 18px;
+  }
 }
+
+

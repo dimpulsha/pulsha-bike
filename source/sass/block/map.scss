@@ -11,13 +11,59 @@
   line-height: 30px;
   letter-spacing: -0.005em;
   color: $text-head;
+
+  @media (max-width: $tablet-max-width) {
+    font-size: 24px;
+    text-align: center;
+  }
+
+   @media (max-width: $mobile-max-width) {
+    font-size: 18px;
+    // text-align: center;
+  }
+}
+
+.map__text-wrapper {
+  @media (max-width: $tablet-max-width) {
+    margin: 0 auto;
+    padding: 0 35px;
+  }
+  @media (max-width: $mobile-max-width) {
+    margin: 0 auto;
+    padding: 0 16px;
+  }
 }
 
 .map__text {
   margin: 0;
+  margin-top: 30px;
   font-size: 17px;
   line-height: 31px;
   color: $text-semi-light;
+
+  @media (max-width: $tablet-max-width) {
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
+.map__text br {
+  display: none;
+  @media (max-width: $mobile-max-width) {
+    display: initial;
+  }
+}
+.map__map-wrapper {
+  margin: 0 auto;
+  margin-top: 42px;
+
+  @media (max-width: $tablet-max-width) {
+    margin-top: 20px;
+  }
+
+  @media (max-width: $tablet-max-width) {
+    margin-top: 25px;
+  }
 }
 
 .map__links-item {

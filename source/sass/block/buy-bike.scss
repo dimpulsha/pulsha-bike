@@ -1,6 +1,6 @@
 .buy-bike {
   min-height: 825px;
-  background-color: $backgfound-dark;
+  background-color: $background-dark;
   background-image: url("../img/bg/head-dt@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -9,23 +9,99 @@
   @media (min-resolution: 2dppx) {
     background-image: url("../img/bg/head-dt@2x.jpg");
   }
+  @media (max-width: $tablet-max-width) {
+    background-image: none;
+    background-color: initial;
+
+  }
 }
 
 .buy-bike__wrapper {
   display: flex;
   justify-content: space-between;
-  width: 874px;
+  width: 878px;
   margin: 0 auto;
+  @media (max-width: $tablet-max-width) {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  // @media (max-width: $mobile-max-width) {
+
+  // }
+}
+
+.buy-bike__text-content-wrapper {
+  width: 50%;
+  @media (max-width: $tablet-max-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    background-color: $background-dark;
+    background-image: url("../img/bg/head-pad@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg/head-pad@2x.jpg");
+    }
+  }
+  @media (max-width: $mobile-max-width) {
+    min-height: 390px;
+    padding: 0 16px;
+    background-image: url("../img/bg/head-mob@1x.jpg");
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg/head-mob@2x.jpg");
+    }
+  }
 }
 
 .buy-bike__text-content {
+  box-sizing: border-box;
+  margin-top: 369px;
+  @media (max-width: $tablet-max-width) {
+    width: 60%;
+    min-height: 340px;
+    // width: 525px;
+    // margin-top: 135px;
+    margin-top: 0;
+    padding-top: 135px;
+    text-align: center;
+  }
+  @media (max-width: $mobile-max-width) {
+    padding-top: 120px;
+    width: 90%;
+  }
+}
+
+.buy-bike__form-wrapper {
+  margin-top: 322px;
   width: 50%;
-  margin-top: 307px;
+  @media (max-width: $tablet-max-width) {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+   @media (max-width: $mobile-max-width) {
+     width: 100%;
+     padding: 0 5%;
+   }
 }
 
 .buy-bike__form {
-  margin-top: 260px;
-  width: 50%;
+  margin-left: auto;
+  width: 327px;
+  @media (max-width: $tablet-max-width) {
+     width: 321px;
+    margin: 0 auto;
+  }
+  @media (max-width: $mobile-max-width) {
+     width: 288px;
+
+  }
 }
 
 .buy-bike__head-text {
@@ -35,6 +111,10 @@
   line-height: 64px;
   letter-spacing: -0.005em;
   color: $text-inversion;
+  @media (max-width: $tablet-max-width) {
+    font-size: 30px;
+    line-height: 42px;
+  }
 }
 
 .buy-bike__text{
@@ -44,4 +124,14 @@
   font-size: 20px;
   line-height: 32px;
   color: $text-inversion-semi-dark;
+  @media (max-width: $tablet-max-width) {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+}
+
+.buy-bike__text br {
+ @media (max-width: $tablet-max-width){
+   display: none;
+ }
 }

@@ -16,6 +16,8 @@
   <link rel="preload" href="fonts/opensans-semibold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensans-semibold.woff" as="font" type="font/woff" crossorigin="anonymous">
 </head>
+<!-- page--nojs -->
+<!-- page--menu-open -->
 
 <body class="page">
   <div class="page__header-wrapper">
@@ -25,27 +27,41 @@
       <nav class="header__nav nav">
         <button class="nav__menu-toggle"> <span class="visually-hidden">Показать меню</span>
           <!-- style="outline: 1px solid green;" -->
-          <!-- <svg class="nav__button-open-icon" width="20" height="14">
-          <use xlink:href="img/menu-sprite.svg#menu-open"></use>
-      </svg>
-      <svg class="nav__button-close-icon" width="21" height="20">
-        <use xlink:href="img/menu-sprite.svg#menu-close"></use>
-      </svg> -->
+          <svg class="nav__button-open-icon" width="30" height="30">
+            <use xlink:href="img/sprite.svg#burger-ico"></use>
+          </svg>
+          <svg class="nav__button-close-icon" width="24" height="25">
+            <use xlink:href="img/sprite.svg#cross-ico"></use>
+          </svg>
         </button>
-        <ul class="nav__menu-list menu-list">
-          <li class="menu-list__item">
-            <a class="menu-list__link" href="">О нас</a>
-          </li>
-          <li class="menu-list__item">
-            <a class="menu-list__link" href="">Виды велосипедов</a>
-          </li>
-          <li class="menu-list__item">
-            <a class="menu-list__link" href="">Видео про велосипеды</a>
-          </li>
-          <li class="menu-list__item">
-            <a class="menu-list__link" href="">Контакты</a>
-          </li>
-        </ul>
+        <div class="nav__menu-list">
+          <ul class="menu-list">
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="">О нас</a>
+              <svg class="site-nav__menu-ico" width="8" height="12">
+                <use xlink:href="img/sprite.svg#arrow-right-ico"></use>
+              </svg>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="">Виды велосипедов</a>
+              <svg class="site-nav__menu-ico" width="8" height="12">
+                <use xlink:href="img/sprite.svg#arrow-right-ico"></use>
+              </svg>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="">Видео про велосипеды</a>
+              <svg class="site-nav__menu-ico" width="8" height="12">
+                <use xlink:href="img/sprite.svg#arrow-right-ico"></use>
+              </svg>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="#map">Контакты</a>
+              <svg class="site-nav__menu-ico" width="8" height="12">
+                <use xlink:href="img/sprite.svg#arrow-right-ico"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
   </div>
@@ -54,14 +70,16 @@
     <section class="content__buy-bike buy-bike">
       <div class="buy-bike__wrapper">
         <!-- style="outline: 1px solid brown;" -->
-        <div class="buy-bike__text-content">
-          <h1 class="visually-hidden">Главная страница магазина MooN</h1>
-          <p class="buy-bike__head-text">Мы продаем велосипеды</p>
-          <p class="buy-bike__text">Наш магазин отбирает только самые <br> лучшие велосипеды для продажи </p>
+        <div class="buy-bike__text-content-wrapper">
+          <div class="buy-bike__text-content">
+            <h1 class="visually-hidden">Главная страница магазина MooN</h1>
+            <p class="buy-bike__head-text">Мы продаем велосипеды</p>
+            <p class="buy-bike__text">Наш магазин отбирает только самые <br> лучшие велосипеды для продажи </p>
+          </div>
         </div>
         <!-- style="outline: 1px solid brown;" -->
-        <div class="buy-bike__form">
-          <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="buy-bike__form-wrapper">
+          <form class="buy-bike__form contact-form" action="https://echo.htmlacademy.ru" method="post">
             <p class="contact-form__head">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
             <input class="contact-form__item contact-form__input" type="text" name="name" id="name-id"
               placeholder="Введите Ваше Имя" required>
@@ -76,10 +94,13 @@
     <section class="about"></section>
     <section class="bike"></section>
     <section class="video"></section>
-    <section class="content__map map" style="outline: 1px solid orange;">
-      <h2 class="map__header">Как нас найти?</h2>
-      <p class="map__text">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
-      <div>
+    <!-- style="outline: 1px solid orange;" -->
+    <section class="content__map map" id="map">
+      <div class="map__text-wrapper">
+        <h2 class="map__header">Как нас найти?</h2>
+        <p class="map__text">Мы находимся по адресу: <br> Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+      </div>
+      <div class="map__map-wrapper">
         <img src="img/content/map_temp_dt.png" alt="карта" width="957" height="530">
       </div>
       <div class="map__contact-links">
