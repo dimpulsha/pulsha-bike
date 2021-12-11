@@ -22,6 +22,7 @@
   width: 878px;
   margin: 0 auto;
   @media (max-width: $tablet-max-width) {
+    box-sizing: border-box;
     width: 100%;
     flex-direction: column;
     align-items: center;
@@ -32,6 +33,7 @@
 }
 
 .buy-bike__text-content-wrapper {
+  box-sizing: border-box;
   width: 50%;
   @media (max-width: $tablet-max-width) {
     display: flex;
@@ -50,7 +52,7 @@
   }
   @media (max-width: $mobile-max-width) {
     min-height: 390px;
-    padding: 0 16px;
+    // padding: 0 16px;
     background-image: url("../img/bg/head-mob@1x.jpg");
     @media (min-resolution: 2dppx) {
       background-image: url("../img/bg/head-mob@2x.jpg");
@@ -85,22 +87,22 @@
     flex-direction: column;
     align-items: center;
   }
-   @media (max-width: $mobile-max-width) {
-     width: 100%;
-     padding: 0 5%;
-   }
+  @media (max-width: $mobile-max-width) {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 5%;
+  }
 }
 
 .buy-bike__form {
   margin-left: auto;
   width: 327px;
   @media (max-width: $tablet-max-width) {
-     width: 321px;
+    width: 321px;
     margin: 0 auto;
   }
   @media (max-width: $mobile-max-width) {
-     width: 288px;
-
+    width: 288px;
   }
 }
 
@@ -131,7 +133,7 @@
 }
 
 .buy-bike__text br {
- @media (max-width: $tablet-max-width){
-   display: none;
- }
+  @media (max-width: $tablet-max-width){
+    display: none;
+  }
 }

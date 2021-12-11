@@ -91,10 +91,10 @@
 }
 
 .page--menu-open .nav__menu-list {
-   @media (max-width: $tablet-max-width) {
+  @media (max-width: $tablet-max-width) {
     height: 100vh;
     display: block;
     position: fixed;
     background-color: $background-menu-mobile;
-   }
+  }
 }

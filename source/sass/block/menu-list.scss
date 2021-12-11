@@ -21,7 +21,8 @@
     align-items: center;
     box-sizing: border-box;
     width: 100%;
-    padding:0 25px 0 16px;
+    margin-bottom: 12px;
+    padding:0 40px 0 16px;
     height: 60px;
     margin-left: 0;
     background-color: $background-menu-mobile-item;
@@ -54,7 +55,7 @@
     font-size: 20px;
     line-height: 28px;
     color: $text-mobile-menu;
-   }
+  }
 }
 
 .menu-list__link:hover {
