@@ -54,20 +54,38 @@
   }
 }
 .map__map-wrapper {
+  width: 957px;
+  height: 530px;
   margin: 0 auto;
   margin-top: 42px;
+  font-size: 0;
 
   @media (max-width: $tablet-max-width) {
+    width: 698px;
+    height: 545px;
     margin-top: 20px;
   }
 
-  @media (max-width: $tablet-max-width) {
+  @media (max-width: $mobile-max-width) {
+    width: 320px;
+    height: 250px;
     margin-top: 25px;
   }
 }
 
-.map__links-item {
-  font-size: 16px;
-  line-height: 22px;
-  color: $text-light;
+.map__contact-list {
+  margin-top: 39px;
+  margin-bottom: 73px;
+  margin-left: -85px;
+
+  @media (max-width: $tablet-max-width) {
+    margin-top: 21px;
+    margin-bottom: 31px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    margin-top: 31px;
+    margin-bottom: 28px;
+  }
+
 }

@@ -1,0 +1,14 @@
+.contact-item {
+  display: flex;
+  align-items: center;
+}
+
+.contact-item__links {
+  font-size: 16px;
+  line-height: 22px;
+  color: $text-light;
+}
+
+.contact-item-ico {
+  margin-right: 15px;
+}

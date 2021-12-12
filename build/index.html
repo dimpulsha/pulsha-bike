@@ -38,25 +38,25 @@
           <ul class="menu-list">
             <li class="menu-list__item">
               <a class="menu-list__link" href="#about">О нас</a>
-              <svg class="site-nav__menu-ico" width="8" height="12">
+              <svg class="menu-list__menu-ico" width="8" height="12">
                 <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
               </svg>
             </li>
             <li class="menu-list__item">
               <a class="menu-list__link" href="#bike">Виды велосипедов</a>
-              <svg class="site-nav__menu-ico" width="8" height="12">
+              <svg class="menu-list__menu-ico" width="8" height="12">
                 <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
               </svg>
             </li>
             <li class="menu-list__item">
               <a class="menu-list__link" href="#video">Видео про велосипеды</a>
-              <svg class="site-nav__menu-ico" width="8" height="12">
+              <svg class="menu-list__menu-ico" width="8" height="12">
                 <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
               </svg>
             </li>
             <li class="menu-list__item">
-              <a class="menu-list__link" href="#map">Контакты</a>
-              <svg class="site-nav__menu-ico" width="8" height="12">
+              <a class="menu-list__link" href="#map-section">Контакты</a>
+              <svg class="menu-list__menu-ico" width="8" height="12">
                 <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
               </svg>
             </li>
@@ -81,7 +81,7 @@
         <div class="buy-bike__form-wrapper">
           <form class="buy-bike__form contact-form" action="https://echo.htmlacademy.ru" method="POST">
             <p class="contact-form__head">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
-            <label for="#name-id"> <span class="visually-hidden">Введите ваше имя</span> </label>
+            <label for="name-id"> <span class="visually-hidden">Введите ваше имя</span> </label>
             <input class="contact-form__item contact-form__input contact-form__input--name" type="text" name="name" id="name-id" minlength="2" placeholder="Введите Ваше Имя" required="">
             <label for="tel-id"> <span class="visually-hidden">Введите номер телефона</span></label>
             <input class="contact-form__item contact-form__input contact-form__input--tel" type="tel" name="tel" id="tel-id" placeholder="Введите Ваш номер телефона" pattern="\+{0,1}\d[0-9]{10,14}">
@@ -110,26 +110,76 @@
           <dt class="fact-item__term"><span class="visually-hidden">Факт номер</span>04</dt>
           <dd class="fact-item__description">Профессиональные консультации!</dd>
         </div>
-    </dl></section>
-    <section class="bike" id="bike"></section>
+      </dl>
+    </section>
+    <section class="bike" id="bike">
+      <h2 class="bike__head-text">Виды велосипедов</h2>
+      <!-- <ul class="bike__kind-list kind-list">
+        <li class="kind-list__item bike-card">
+          <a class="bike-card__link" href="#">
+            <h3 class="bike-card__head">Дорожный велосипед</h3>
+            <picture>
+              <img class="bike-card__image" src="" alt="">
+            </picture>
+          </a>
+        </li>
+        <li class="kind-list__item bike-card">
+          <a class="bike-card__link" href="#">
+            <h3 class="bike-card__head">Горный велосипед</h3>
+            <picture>
+              <img class="bike-card__image" src="" alt="">
+            </picture>
+          </a>
+        </li>
+        <li class="kind-list__item bike-card">
+          <a class="bike-card__link" href="#">
+            <h3 class="bike-card__head">Детский велосипед</h3>
+            <picture>
+              <img class="bike-card__image" src="" alt="">
+            </picture>
+          </a>
+        </li>
+      </ul> -->
+    </section>
     <section class="video" id="video"></section>
     <!-- style="outline: 1px solid orange;" -->
-    <section class="content__map map" id="map">
+    <section class="content__map map" id="map-section">
       <div class="map__text-wrapper">
         <h2 class="map__header">Как нас найти?</h2>
         <p class="map__text">Мы находимся по адресу: <br> Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
       </div>
-      <div class="map__map-wrapper">
-        <img src="img/content/map_temp_dt.png" alt="карта" width="957" height="530">
+      <div class="map__map-wrapper" id="map">
+        <picture>
+          <!-- <source type="image/webp" media="(min-width: 1150px)"
+            srcset="img/webp/map-desktop-v2.webp 1x, img/webp/map-desktop-v2@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/webp/map-tablet-v2.webp 1x, img/webp/map-tablet-v2@2x.webp 2x">
+          <source type="image/webp" srcset="img/webp/map-mobile-v2.webp 1x, img/webp/map-mobile-v2@2x.webp 2x"> -->
+          <source media="(max-width: 767px)" srcset="img/content/map-mob@1x.png 1x, img/content/map-mob@2x.png 2x">
+          <source media="(max-width: 1023px)" srcset="img/content/map-pad@1x.png 1x, img/content/map-pad@2x.png 2x">
+          <img class="map__map-image" src="img/content/map-dt@1x.png" srcset="img/content/map-dt@2x.png 2x" alt="Карта с местом нахождения компании: г. Санкт-Петербург ул. Большая Конюшенная д. 19" loading="lazy">
+        </picture>
       </div>
-      <div class="map__contact-links">
-        <a class="map__links-item" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
-        <a class="map__links-item" href="tel:+749978468446">+7 (499) -784-684-46</a>
-      </div>
+      <ul class="map__contact-list contact-list">
+        <li class="contact-list__item contact-item">
+          <svg class="contact-item-ico" width="26" height="20">
+            <use xlink:href="img/sprite_auto.svg#icon-envelop"></use>
+          </svg>
+          <a class="contact-item__links" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
+        </li>
+        <li class="contact-list__item contact-item">
+          <svg class="contact-item-ico" width="22" height="24">
+            <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
+          </svg>
+          <a class="contact-item__links" href="tel:+749978468446">+7 (499) -784-684-46</a>
+        </li>
+      </ul>
     </section>
 
   </main>
   <script async="" src="./js/script.js"></script>
+  <!-- <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDttqdubiQCKsGcu24-MBDSG9N-aFzxKJE&callback=initMap"></script> -->
 </body>
 
 </html>
