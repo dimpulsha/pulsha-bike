@@ -12,7 +12,10 @@
   @media (max-width: $tablet-max-width) {
     background-image: none;
     background-color: initial;
-
+    min-height: 753px;
+  }
+  @media (max-width: $mobile-max-width) {
+    min-height: 821px;
   }
 }
 

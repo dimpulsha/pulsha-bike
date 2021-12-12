@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -79,17 +79,38 @@
         </div>
         <!-- style="outline: 1px solid brown;" -->
         <div class="buy-bike__form-wrapper">
-          <form class="buy-bike__form contact-form" action="https://echo.htmlacademy.ru" method="post">
+          <form class="buy-bike__form contact-form" action="https://echo.htmlacademy.ru" method="POST">
             <p class="contact-form__head">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
-            <input class="contact-form__item contact-form__input" type="text" name="name" id="name-id" placeholder="Введите Ваше Имя" required="">
-            <input class="contact-form__item contact-form__input" type="tel" name="tel" id="tel-id" placeholder="Введите Ваш номер телефона" required="">
+            <label for="#name-id"> <span class="visually-hidden">Введите ваше имя</span> </label>
+            <input class="contact-form__item contact-form__input contact-form__input--name" type="text" name="name" id="name-id" minlength="2" placeholder="Введите Ваше Имя" required="">
+            <label for="tel-id"> <span class="visually-hidden">Введите номер телефона</span></label>
+            <input class="contact-form__item contact-form__input contact-form__input--tel" type="tel" name="tel" id="tel-id" placeholder="Введите Ваш номер телефона" pattern="\+{0,1}\d[0-9]{10,14}">
             <button class="contact-form__item contact-form__button" type="submit">Подобрать велосипед
               мечты</button>
           </form>
         </div>
       </div>
     </section>
-    <section class="about" id="about"></section>
+    <section class="page__about about" id="about">
+      <h2 class="about__head-text">Несколько фактов о нас</h2>
+      <dl class="about__fact-list fact-list">
+        <div class="fact-list__item fact-item">
+          <dt class="fact-item__term"><span class="visually-hidden">Факт номер</span>01</dt>
+          <dd class="fact-item__description">Самый широкий выбор велосипедов!</dd>
+        </div>
+        <div class="fact-list__item fact-item">
+          <dt class="fact-item__term"><span class="visually-hidden">Факт номер</span>02</dt>
+          <dd class="fact-item__description">Доставка велосипедов <br> по всей России!</dd>
+        </div>
+        <div class="fact-list__item fact-item">
+          <dt class="fact-item__term"><span class="visually-hidden">Факт номер</span>03</dt>
+          <dd class="fact-item__description">Большой выбор крутых аксессуаров!</dd>
+        </div>
+        <div class="fact-list__item fact-item">
+          <dt class="fact-item__term"><span class="visually-hidden">Факт номер</span>04</dt>
+          <dd class="fact-item__description">Профессиональные консультации!</dd>
+        </div>
+    </dl></section>
     <section class="bike" id="bike"></section>
     <section class="video" id="video"></section>
     <!-- style="outline: 1px solid orange;" -->

@@ -12,11 +12,14 @@ $black-rgba-07: rgba(0, 0, 0, 0.7);
 $white-rgba-07: rgba(255, 255, 255, 0.7);
 $white-rgba-08: rgba(255, 255, 255, 0.8);
 $white-rgba-02: rgba(255, 255, 255, 0.2);
+$warning: #ff6347;
+$blue: #4646ff;
 
 // color by use
 $text: $black;
 $text-head: $dark;
 $text-inversion: $white;
+$text-accented:$accented;
 $text-light: $black-rgba-05;
 $text-semi-light: $black-rgba-07;
 $text-inversion-dark: $white-rgba-07;
@@ -28,6 +31,7 @@ $background-accented: $accented;
 $background-menu-toggle: $accented;
 $background-menu-mobile: $white;
 $background-menu-mobile-item: $grey-light;
-
 $borderline: $white-rgba-02;
 $border: $grey;
+$input-error: $warning;
+$input-hover:$blue;

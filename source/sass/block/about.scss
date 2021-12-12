@@ -1,0 +1,44 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 503px;
+}
+
+.about__head-text {
+  // margin: 0;
+  margin-top: 150px;
+  margin-bottom: 36px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.005em;
+  color: $text-head;
+
+  @media (max-width: $tablet-max-width) {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 24px;
+    line-height: 41px;
+  }
+  @media (max-width: $tablet-max-width) {
+    margin-bottom: 32px;
+  }
+}
+
+.about__fact-list {
+  box-sizing: border-box;
+  margin-top: 50px;
+  max-width: 1190px;
+  width: 100%;
+
+  @media (max-width: $tablet-max-width) {
+    // box-sizing: content-box;
+    // width: 72%;
+    // margin: 0 auto;
+    padding: 0 90px;
+  }
+  @media (max-width: $mobile-max-width) {
+    padding: 0 10px;
+  }
+}

@@ -16,12 +16,14 @@
   color: $text-inversion;
 
   @media (max-width: $tablet-max-width) {
+    margin-bottom: 10px;
     padding-bottom: 10px;
     font-size: 18px;
     color: $text;
   }
 
   @media (max-width: $tablet-max-width) {
+    margin-bottom: 0;
     padding-bottom: 0;
   }
 }
@@ -42,6 +44,10 @@
   color: $text-input;
 }
 
+.contact-form__input:hover {
+ box-shadow: 0 0 0 3px $blue;
+}
+
 .contact-form__button {
   // display: flex;
   // align-items: center;
@@ -56,4 +62,20 @@
   background-color: $background-accented;
   border: none;
   cursor: pointer;
+}
+
+.contact-form__button:hover, .contact-form__button:focus {
+  opacity: 0.7;
+}
+
+.contact-form__button:active {
+  opacity: 0.5;
+}
+
+.contact-form__input--error{
+  box-shadow: 0 0 0 6px $input-error;
+}
+
+.contact-form__input--tel:invalid {
+  box-shadow: 0 0 0 6px $input-error;
 }

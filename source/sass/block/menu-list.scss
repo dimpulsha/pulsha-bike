@@ -63,3 +63,12 @@
   // font-weight: 400;
   opacity: 1;
 }
+
+.menu-list__link:active {
+  color: $text-accented;
+  opacity: 1;
+
+   @media (max-width: $tablet-max-width) {
+    color: $text;
+  }
+}
