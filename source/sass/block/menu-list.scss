@@ -68,7 +68,7 @@
   color: $text-accented;
   opacity: 1;
 
-   @media (max-width: $tablet-max-width) {
+  @media (max-width: $tablet-max-width) {
     color: $text;
   }
 }

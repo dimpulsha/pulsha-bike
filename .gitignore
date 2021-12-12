@@ -12,6 +12,6 @@ npm-debug.*
 source/css/*.css
 source/css/*.map
 Thumbs.db
-/_temp
-/build
+_temp/
+build/
 bike.code-workspace

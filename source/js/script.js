@@ -60,4 +60,3 @@ submitForm.addEventListener('click', function () {
   checkEmptyName();
   checkEmptyTel();
 });
-
