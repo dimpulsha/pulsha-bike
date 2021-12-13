@@ -1,23 +1,28 @@
 .fact-list {
-  margin: 0;
+
+
   display: flex;
   // justify-content: space-between;
   justify-content: center;
   flex-wrap: wrap;
+  @media (max-width: $tablet-max-width) {
+    padding: 0 90px;
+  }
 
   @media (max-width: $mobile-max-width) {
     flex-direction: column;
     align-items: center;
+    padding: 0 10px;
   }
 }
 
 .fact-list__item {
   @media (max-width: $tablet-max-width) {
     margin: 0 15px;
-    margin-bottom: 15px;
+    margin-bottom: 40px;
   }
 
   @media (max-width: $mobile-max-width) {
-    margin-bottom: 36px;
+    margin-bottom: 37px;
   }
 }

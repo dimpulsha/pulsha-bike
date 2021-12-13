@@ -10,7 +10,8 @@
   @media (max-width: $tablet-max-width) {
     width: calc(50% - 30px);
     min-width: 263px;
-    padding: 15px 0;
+    padding: 0;
+    // margin-bottom: 15px;
   }
 
   @media (max-width: $mobile-max-width) {
@@ -35,10 +36,18 @@
   text-align: center;
 
   @media (max-width: $mobile-max-width) {
-    margin-top: 14px;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    // margin-bottom: 10px;
     font-size: 18px;
   }
 }
+
+.fact-item:first-child .fact-item__description {
+  margin-top: 16px;
+  margin-bottom: 0px;
+}
+
 
 .fact-item__description br {
   @media (max-width: $mobile-max-width) {

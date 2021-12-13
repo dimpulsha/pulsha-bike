@@ -17,10 +17,16 @@
   @media (max-width: $tablet-max-width) {
     font-size: 24px;
     line-height: 41px;
+    margin-top: 50px;
   }
 }
 
 .bike__kind-list {
   margin-top: 50px;
   margin-bottom: 147px;
+
+  @media (max-width: $tablet-max-width) {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
 }

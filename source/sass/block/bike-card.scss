@@ -1,6 +1,7 @@
-.bike-card {
+// .bike-card {
 
-}
+// }
+
 .bike-card__head {
   margin: 0;
   margin-top: 20px;
@@ -15,35 +16,46 @@
   flex-direction: column-reverse;
   align-items: center;
   // display: block;
+  // width: 100%;
+  // height: 100%;
   font-size: 0;
 }
 
 .bike-card__link--road {
+  @media (min-width: $desktop-size) {
   margin-top: 10px;
+  }
 }
 
 .bike-card__link--mount {
-  margin-top: 40px;
+  @media (min-width: $desktop-size) {
+    margin-top: 40px;
+  }
+}
+
+.bike-card__picture-wrapper {
+  width: 100%;
+  height: 100%;
 }
 
 .bike-card__image {
+  display: block;
   width: 100%;
   height: 100%;
-  display: block;
   font-size: 0;
 }
 
-.bike-card__image--road {
-  max-width: 342px;
-  max-height: 503px;
-}
+// .bike-card__image--road {
+//   max-width: 342px;
+//   max-height: 503px;
+// }
 
-.bike-card__image--road {
-  max-width: 342px;
-  max-height: 566px;
-}
+// .bike-card__image--road {
+//   max-width: 342px;
+//   max-height: 566px;
+// }
 
-.bike-card__image--child {
-  max-width: 342px;
-  max-height: 512px;
-}
+// .bike-card__image--child {
+//   max-width: 342px;
+//   max-height: 512px;
+// }
