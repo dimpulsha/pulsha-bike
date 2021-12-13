@@ -25,7 +25,7 @@
     <header class="page__header header">
       <a class="header__logo"> <img src="img/logo/logo.svg" alt="Логотип компании MooN" width="67" height="21"></a>
       <nav class="header__nav nav">
-        <button class="nav__menu-toggle"> <span class="visually-hidden">Показать меню</span>
+        <button class="nav__menu-toggle" type="button"> <span class="visually-hidden">Показать меню</span>
           <!-- style="outline: 1px solid green;" -->
           <svg class="nav__button-open-icon" width="30" height="30">
             <use xlink:href="img/sprite_auto.svg#icon-burger"></use>
@@ -116,20 +116,26 @@
     </section>
     <section class="bike" id="bike">
       <h2 class="bike__head-text">Виды велосипедов</h2>
-      <!-- <ul class="bike__kind-list kind-list">
+      <ul class="bike__kind-list kind-list">
         <li class="kind-list__item bike-card">
-          <a class="bike-card__link" href="#">
+          <a class="bike-card__link bike-card__link--road" href="#">
             <h3 class="bike-card__head">Дорожный велосипед</h3>
             <picture>
-              <img class="bike-card__image" src="" alt="">
+              <source media="(max-width: 1023px)"
+                srcset="img/content/road-bike-mob@1x.jpg 1x, img/content/road-bike-mob@2x.jpg 2x">
+              <img class="bike-card__image bike-card__image--road" src="img/content/road-bike@1x.jpg"
+                srcset="img/content/road-bike@2x.jpg 2x" alt="Дорожный велосипед">
             </picture>
           </a>
         </li>
         <li class="kind-list__item bike-card">
-          <a class="bike-card__link" href="#">
+          <a class="bike-card__link bike-card__link--mount" href="#">
             <h3 class="bike-card__head">Горный велосипед</h3>
             <picture>
-              <img class="bike-card__image" src="" alt="">
+              <source media="(max-width: 1023px)"
+                srcset="img/content/mount-bike-mob@1x.jpg 1x, img/content/mount-bike-mob@2x.jpg 2x">
+              <img class="bike-card__image bike-card__image--mount" src="img/content/mount-bike@1x.jpg"
+                srcset="img/content/mount-bike@2x.jpg 2x" alt="Горный велосипед">
             </picture>
           </a>
         </li>
@@ -137,11 +143,14 @@
           <a class="bike-card__link" href="#">
             <h3 class="bike-card__head">Детский велосипед</h3>
             <picture>
-              <img class="bike-card__image" src="" alt="">
+              <source media="(max-width: 1023px)"
+                srcset="img/content/child-bike-mob@1x.jpg 1x, img/content/child-bike-mob@2x.jpg 2x">
+              <img class="bike-card__image bike-card__image--child" src="img/content/child-bike@1x.jpg"
+                srcset="img/content/child-bike@2x.jpg 2x" alt="Детский велосипед">
             </picture>
           </a>
         </li>
-      </ul> -->
+      </ul>
     </section>
     <section class="video" id="video"></section>
     <!-- style="outline: 1px solid orange;" -->
