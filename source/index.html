@@ -158,7 +158,30 @@
         </li>
       </ul>
     </section>
-    <section class="video" id="video"></section>
+    <section class="video" id="video">
+      <div class="video__text-wrapper">
+        <div class="video__text-content">
+          <h2 class="video__head-text">Видео про велосипеды</h2>
+          <p class="video__content-text">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.
+          </p>
+        </div>
+      </div>
+      <div class="video__video-wrapper video-body">
+        <picture>
+          <source media="(max-width: 767px)"
+            srcset="img/content/video-prev-mob@1x.jpg 1x, img/content/video-prev-mob@2x.jpg 2x">
+          <source media="(max-width: 1023px)"
+            srcset="img/content/video-prev-pad@1x.jpg 1x, img/content/video-prev-pad@2x.jpg 2x">
+          <img class="video-body__image" src="img/content/video-prev-dt@1x.jpg"
+            srcset="img/content/video-prev-dt@2x.jpg 2x" alt="Кадр из видео о велосипедах">
+        </picture>
+        <button class="video-body__play-button" type="button"><span class="visually-hidden">Показать
+            видео</span>
+          <svg class="video-body__play-icon" width="13" height="18">
+            <use xlink:href="img/sprite_auto.svg#icon-play"></use>
+          </svg></button>
+      </div>
+    </section>
     <!-- style="outline: 1px solid orange;" -->
     <section class="content__map map" id="map-section">
       <div class="map__text-wrapper">
