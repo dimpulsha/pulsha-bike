@@ -120,6 +120,8 @@
             <h3 class="bike-card__head">Дорожный велосипед</h3>
             <div class="bike-card__picture-wrapper bike-card__picture-wrapper--road">
               <picture>
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/road-bike-mob@1x.webp 1x, img/content/road-bike-mob@1x.webp 2x">
+                <source type="image/webp" srcset="img/content/road-bike@1x.webp 1x, img/content/road-bike@1x.webp 2x">
                 <source media="(max-width: 1023px)" srcset="img/content/road-bike-mob@1x.jpg 1x, img/content/road-bike-mob@2x.jpg 2x">
                 <img class="bike-card__image bike-card__image--road" src="img/content/road-bike@1x.jpg" srcset="img/content/road-bike@2x.jpg 2x" alt="Дорожный велосипед">
               </picture>
@@ -131,6 +133,8 @@
             <h3 class="bike-card__head">Горный велосипед</h3>
             <div class="bike-card__picture-wrapper bike-card__picture-wrapper--mount">
               <picture>
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/mount-bike-mob@1x.webp 1x, img/content/mount-bike-mob@1x.webp 2x">
+                <source type="image/webp" srcset="img/content/mount-bike@1x.webp 1x, img/content/mount-bike@1x.webp 2x">
                 <source media="(max-width: 1023px)" srcset="img/content/mount-bike-mob@1x.jpg 1x, img/content/mount-bike-mob@2x.jpg 2x">
                 <img class="bike-card__image bike-card__image--mount" src="img/content/mount-bike@1x.jpg" srcset="img/content/mount-bike@2x.jpg 2x" alt="Горный велосипед">
               </picture>
@@ -142,6 +146,8 @@
             <h3 class="bike-card__head">Детский велосипед</h3>
             <div class="bike-card__picture-wrapper bike-card__picture-wrapper--child">
               <picture>
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/child-bike-mob@1x.webp 1x, img/content/child-bike-mob@1x.webp 2x">
+                <source type="image/webp" srcset="img/content/child-bike@1x.webp 1x, img/content/child-bike@1x.webp 2x">
                 <source media="(max-width: 1023px)" srcset="img/content/child-bike-mob@1x.jpg 1x, img/content/child-bike-mob@2x.jpg 2x">
                 <img class="bike-card__image bike-card__image--child" src="img/content/child-bike@1x.jpg" srcset="img/content/child-bike@2x.jpg 2x" alt="Детский велосипед">
               </picture>
@@ -160,6 +166,9 @@
       </div>
       <div class="video__video-wrapper video-body">
         <picture>
+          <source type="image/webp" media="(max-width: 767px)" srcset="img/content/video-prev-mob@1x.webp 1x, img/content/video-prev-mob@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/video-prev-pad@1x.webp 1x, img/content/video-prev-pad@2x.webp 2x">
+          <source type="image/webp" srcset="img/content/video-prev-dt@1x.webp 1x, img/content/video-prev-dt@2x.webp 2x">
           <source media="(max-width: 767px)" srcset="img/content/video-prev-mob@1x.jpg 1x, img/content/video-prev-mob@2x.jpg 2x">
           <source media="(max-width: 1023px)" srcset="img/content/video-prev-pad@1x.jpg 1x, img/content/video-prev-pad@2x.jpg 2x">
           <img class="video-body__image" src="img/content/video-prev-dt@1x.jpg" srcset="img/content/video-prev-dt@2x.jpg 2x" alt="Кадр из видео о велосипедах">
@@ -179,11 +188,9 @@
       </div>
       <div class="map__map-wrapper" id="map">
         <picture>
-          <!-- <source type="image/webp" media="(min-width: 1150px)"
-            srcset="img/webp/map-desktop-v2.webp 1x, img/webp/map-desktop-v2@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)"
-            srcset="img/webp/map-tablet-v2.webp 1x, img/webp/map-tablet-v2@2x.webp 2x">
-          <source type="image/webp" srcset="img/webp/map-mobile-v2.webp 1x, img/webp/map-mobile-v2@2x.webp 2x"> -->
+          <source type="image/webp" media="(max-width: 767px)" srcset="img/content/map-mob@1x.webp 1x, img/img/content/map-mob@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/map-pad@1x.webp 1x, img/img/content/map-pad@2x.webp 2x">
+          <source type="image/webp" srcset="img/content/map-dt@1x.webp 1x, img/content/map-dt@2x.webp 2x">
           <source media="(max-width: 767px)" srcset="img/content/map-mob@1x.png 1x, img/content/map-mob@2x.png 2x">
           <source media="(max-width: 1023px)" srcset="img/content/map-pad@1x.png 1x, img/content/map-pad@2x.png 2x">
           <img class="map__map-image" src="img/content/map-dt@1x.png" srcset="img/content/map-dt@2x.png 2x" alt="Карта с местом нахождения компании: г. Санкт-Петербург ул. Большая Конюшенная д. 19" loading="lazy">
