@@ -76,13 +76,12 @@
         </div>
         <div class="buy-bike__form-wrapper">
           <form class="buy-bike__form contact-form" action="https://echo.htmlacademy.ru" method="POST">
-            <p class="contact-form__head">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+            <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
             <label for="name-id"> <span class="visually-hidden">Введите ваше имя</span> </label>
-            <input class="contact-form__item contact-form__input contact-form__input--name" type="text" name="name"
-              id="name-id" minlength="2" placeholder="Введите Ваше Имя" required>
+            <input type="text" name="name" id="name-id" minlength="2" placeholder="Введите Ваше Имя" required>
             <label for="tel-id"> <span class="visually-hidden">Введите номер телефона</span></label>
-            <input class="contact-form__item contact-form__input contact-form__input--tel" type="tel" name="tel"
-              id="tel-id" placeholder="Введите Ваш номер телефона" pattern="\+{0,1}\d[0-9]{10,14}">
+            <input type="tel" name="tel" id="tel-id" placeholder="Введите Ваш номер телефона"
+              pattern="\+{0,1}\d[0-9]{8,14}" required>
             <button class="contact-form__item contact-form__button" type="submit">Подобрать велосипед
               мечты</button>
           </form>
@@ -204,9 +203,9 @@
       <div class="map__map-wrapper" id="map">
         <picture>
           <source type="image/webp" media="(max-width: 767px)"
-            srcset="img/content/map-mob@1x.webp 1x, img/img/content/map-mob@2x.webp 2x">
+            srcset="img/content/map-mob@1x.webp 1x, img/content/map-mob@2x.webp 2x">
           <source type="image/webp" media="(max-width: 1023px)"
-            srcset="img/content/map-pad@1x.webp 1x, img/img/content/map-pad@2x.webp 2x">
+            srcset="img/content/map-pad@1x.webp 1x, img/content/map-pad@2x.webp 2x">
           <source type="image/webp" srcset="img/content/map-dt@1x.webp 1x, img/content/map-dt@2x.webp 2x">
           <source media="(max-width: 767px)" srcset="img/content/map-mob@1x.png 1x, img/content/map-mob@2x.png 2x">
           <source media="(max-width: 1023px)" srcset="img/content/map-pad@1x.png 1x, img/content/map-pad@2x.png 2x">

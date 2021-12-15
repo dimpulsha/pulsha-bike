@@ -11,9 +11,9 @@
   overflow: hidden;
 }
 
-// * {
-//   box-sizing: border-box;
-// }
+html {
+  scroll-behavior: smooth;
+}
 
 * ul {
   margin: 0;

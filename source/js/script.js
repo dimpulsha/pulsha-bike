@@ -2,8 +2,8 @@
 var pageHeader = document.querySelector('.page');
 var headerToggle = document.querySelector('.nav__menu-toggle');
 var menuItems = document.querySelectorAll('.menu-list__link');
-var nameInput = document.querySelector('.contact-form__input--name');
-var telInput = document.querySelector('.contact-form__input--tel');
+var nameInput = document.querySelector('#name-id');
+var telInput = document.querySelector('#tel-id');
 var submitForm = document.querySelector('.contact-form__button');
 
 
@@ -31,7 +31,7 @@ if (menuItems) {
 function checkEmptyName() {
   if (nameInput.value.length === 0) {
     nameInput.setCustomValidity('Имя не заполнено');
-    nameInput.classList.add('contact-form__input--error');
+    nameInput.classList.add('contact-form--input-error');
   } else {
     nameInput.setCustomValidity('');
   }
@@ -40,8 +40,8 @@ function checkEmptyName() {
 
 function checkEmptyTel() {
   if (telInput.value.length === 0) {
-    telInput.setCustomValidity('Телефон не заполнен');
-    telInput.classList.add('contact-form__input--error');
+    telInput.setCustomValidity('Телефон не заполнен.');
+    telInput.classList.add('contact-form--input-error');
   } else {
     telInput.setCustomValidity('');
   }
@@ -49,11 +49,11 @@ function checkEmptyTel() {
 }
 
 nameInput.addEventListener('input', function () {
-  nameInput.classList.remove('contact-form__input--error');
+  nameInput.classList.remove('contact-form--input-error');
 });
 
 telInput.addEventListener('input', function () {
-  telInput.classList.remove('contact-form__input--error');
+  telInput.classList.remove('contact-form--input-error');
 });
 
 submitForm.addEventListener('click', function () {

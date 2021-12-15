@@ -2,11 +2,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  // width: 327px;
-
 }
 
-.contact-form__head{
+.contact-form p{
   margin: 0;
   font-weight: 600;
   font-size: 17px;
@@ -17,7 +15,6 @@
 
   @media (max-width: $tablet-max-width) {
     margin-bottom: 10px;
-    // padding-bottom: 10px;
     font-size: 18px;
     color: $text;
   }
@@ -28,7 +25,7 @@
   }
 }
 
-.contact-form__item {
+.contact-form input, .contact-form button {
   display: block;
   margin-top: 20px;
   height: 48px;
@@ -36,7 +33,7 @@
   box-sizing: border-box;
 }
 
-.contact-form__input {
+.contact-form input {
   padding-left: 20px;
   border: 1px solid $border;
   font-size: 15px;
@@ -44,13 +41,7 @@
   color: $text-input;
 }
 
-.contact-form__input:hover {
-  box-shadow: 0 0 0 3px $blue;
-}
-
-.contact-form__button {
-  // display: flex;
-  // align-items: center;
+.contact-form button {
   display: block;
   margin: 0;
   margin-top: 20px;
@@ -64,18 +55,22 @@
   cursor: pointer;
 }
 
-.contact-form__button:hover, .contact-form__button:focus {
+.contact-form input:hover {
+  box-shadow: 0 0 0 3px $blue;
+}
+
+.contact-form button:hover, .contact-form button:focus {
   opacity: 0.7;
 }
 
-.contact-form__button:active {
+.contact-form button:active {
   opacity: 0.5;
 }
 
-.contact-form__input--error{
+.contact-form--input-error{
   box-shadow: 0 0 0 6px $input-error;
 }
 
-.contact-form__input--tel:invalid {
-  box-shadow: 0 0 0 6px $input-error;
-}
+// .contact-form input[id=tel-id]:invalid {
+//   box-shadow: 0 0 0 6px $input-error;
+// }
