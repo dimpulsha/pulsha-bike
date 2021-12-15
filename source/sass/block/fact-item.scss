@@ -21,7 +21,7 @@
   }
 }
 
-.fact-item__term {
+.fact-item dt {
   font-weight: 700;
   font-size: 28px;
   line-height: 38px;
@@ -29,7 +29,7 @@
   letter-spacing: -1.27273px
 }
 
-.fact-item__description {
+.fact-item dd {
   margin: 0;
   margin-top: 15px;
   letter-spacing: -0.5px;
@@ -43,13 +43,12 @@
   }
 }
 
-.fact-item:first-child .fact-item__description {
+.fact-item:first-child dd {
   margin-top: 16px;
   margin-bottom: 0px;
 }
 
-
-.fact-item__description br {
+.fact-item dd br {
   @media (max-width: $mobile-max-width) {
     display: none;
   }
