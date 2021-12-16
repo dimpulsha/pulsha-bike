@@ -96,6 +96,7 @@
     height: 100vh;
     display: block;
     position: fixed;
+    overflow: auto;
     background-color: $background-menu-mobile;
   }
 }

@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   background-color: $background-section;
+    overflow: hidden;
 }
 
 .bike h2 {
@@ -24,7 +25,6 @@
 .bike__kind-list {
   margin-top: 50px;
   margin-bottom: 150px;
-
   @media (max-width: $tablet-max-width) {
     margin-top: 30px;
     margin-bottom: 20px;
