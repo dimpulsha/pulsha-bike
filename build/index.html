@@ -5,8 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Маuазин велосипедов MooN</title>
-  <link rel="stylesheet" href="css/style.min.css">
+  <title>Магазин велосипедов MooN</title>
   <link rel="preload" href="fonts/opensans-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensans-regular.woff" as="font" type="font/woff" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensans-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -15,6 +14,7 @@
   <link rel="preload" href="fonts/opensans-light.woff" as="font" type="font/woff" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensans-semibold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensans-semibold.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <!-- класс для body при отсутствии JS:  page--nojs -->
@@ -116,10 +116,11 @@
             <h3>Дорожный велосипед</h3>
             <div class="bike-card__picture-wrapper bike-card__picture-wrapper--road">
               <picture>
+                <!-- 1x 270×300 2x 540×600 -->
                 <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/road-bike-mob@1x.webp 1x, img/content/road-bike-mob@1x.webp 2x">
+                <!-- 1x 342×503 2x 684×1006 -->
                 <source type="image/webp" srcset="img/content/road-bike@1x.webp 1x, img/content/road-bike@1x.webp 2x">
-                <source media="(max-width: 1023px)" srcset="img/content/road-bike-mob@1x.jpg 1x, img/content/road-bike-mob@2x.jpg 2x">
-                <!-- 1x 342×503 270×300 2x 684×1006 540×600 -->
+                <!-- 1x 342×503 2x 684×1006 -->
                 <img src="img/content/road-bike@1x.jpg" srcset="img/content/road-bike@2x.jpg 2x" alt="Дорожный велосипед">
               </picture>
             </div>
@@ -130,10 +131,11 @@
             <h3>Горный велосипед</h3>
             <div class="bike-card__picture-wrapper bike-card__picture-wrapper--mount">
               <picture>
+                <!-- 1x 270×300 2x 540×600 -->
                 <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/mount-bike-mob@1x.webp 1x, img/content/mount-bike-mob@1x.webp 2x">
+                <!-- 1x 342×566 2x 684×1132 -->
                 <source type="image/webp" srcset="img/content/mount-bike@1x.webp 1x, img/content/mount-bike@1x.webp 2x">
-                <source media="(max-width: 1023px)" srcset="img/content/mount-bike-mob@1x.jpg 1x, img/content/mount-bike-mob@2x.jpg 2x">
-                <!-- 1x 342×566 270×300 2x 684×1132 540×600 -->
+                <!-- 1x 342×566 2x 684×1132 -->
                 <img src="img/content/mount-bike@1x.jpg" srcset="img/content/mount-bike@2x.jpg 2x" alt="Горный велосипед">
               </picture>
             </div>
@@ -144,10 +146,11 @@
             <h3>Детский велосипед</h3>
             <div class="bike-card__picture-wrapper bike-card__picture-wrapper--child">
               <picture>
+                <!-- 1x 342×513 2x 540×600 -->
                 <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/child-bike-mob@1x.webp 1x, img/content/child-bike-mob@1x.webp 2x">
+                <!-- 1x 342×513 2x 684×1026 -->
                 <source type="image/webp" srcset="img/content/child-bike@1x.webp 1x, img/content/child-bike@1x.webp 2x">
-                <source media="(max-width: 1023px)" srcset="img/content/child-bike-mob@1x.jpg 1x, img/content/child-bike-mob@2x.jpg 2x">
-                <!-- 1x 342×513 270×300 2x 684×1026 540×600 -->
+                <!-- 1x 342×513 2x 684×1026 -->
                 <img src="img/content/child-bike@1x.jpg" srcset="img/content/child-bike@2x.jpg 2x" alt="Детский велосипед">
               </picture>
             </div>
@@ -165,12 +168,17 @@
       </div>
       <div class="video__video-wrapper video-body">
         <picture>
+          <!-- 1x 288×162 2x 576×324 -->
           <source type="image/webp" media="(max-width: 767px)" srcset="img/content/video-prev-mob@1x.webp 1x, img/content/video-prev-mob@2x.webp 2x">
+          <!-- 1x 503×282 2x 1006×564 -->
           <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/video-prev-pad@1x.webp 1x, img/content/video-prev-pad@2x.webp 2x">
+          <!-- 1x 288×162 2x 576×324 -->
           <source type="image/webp" srcset="img/content/video-prev-dt@1x.webp 1x, img/content/video-prev-dt@2x.webp 2x">
-          <source media="(max-width: 767px)" srcset="img/content/video-prev-mob@1x.jpg 1x, img/content/video-prev-mob@2x.jpg 2x">
-          <source media="(max-width: 1023px)" srcset="img/content/video-prev-pad@1x.jpg 1x, img/content/video-prev-pad@2x.jpg 2x">
-          <!-- 1x 929×522 503×282 288×162 2x 1858×1044 1006×564 576×324 -->
+          <!-- <source media="(max-width: 767px)"
+            srcset="img/content/video-prev-mob@1x.jpg 1x, img/content/video-prev-mob@2x.jpg 2x">
+          <source media="(max-width: 1023px)"
+            srcset="img/content/video-prev-pad@1x.jpg 1x, img/content/video-prev-pad@2x.jpg 2x"> -->
+          <!-- 1x 288×162 2x 576×324 -->
           <img src="img/content/video-prev-dt@1x.jpg" srcset="img/content/video-prev-dt@2x.jpg 2x" alt="Кадр из видео о велосипедах">
         </picture>
         <button class="video-body__play-button" type="button"><span class="visually-hidden">Показать
@@ -187,12 +195,13 @@
       </div>
       <div class="map__map-wrapper" id="map">
         <picture>
+          <!-- 1x 319×250 2x 638×500 -->
           <source type="image/webp" media="(max-width: 767px)" srcset="img/content/map-mob@1x.webp 1x, img/content/map-mob@2x.webp 2x">
+          <!-- 1x 698×545 2x 1396×1090 -->
           <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/map-pad@1x.webp 1x, img/content/map-pad@2x.webp 2x">
+          <!-- 1x 957×530 2x 1914×1060 -->
           <source type="image/webp" srcset="img/content/map-dt@1x.webp 1x, img/content/map-dt@2x.webp 2x">
-          <source media="(max-width: 767px)" srcset="img/content/map-mob@1x.png 1x, img/content/map-mob@2x.png 2x">
-          <source media="(max-width: 1023px)" srcset="img/content/map-pad@1x.png 1x, img/content/map-pad@2x.png 2x">
-          <!-- 1x 957×530 698×545 319×250 2x 1914×1060 1396×1090 638×500 -->
+          <!-- 1x 957×530 2x 1914×1060 -->
           <img src="img/content/map-dt@1x.png" srcset="img/content/map-dt@2x.png 2x" alt="Карта с местом нахождения компании: г. Санкт-Петербург ул. Большая Конюшенная д. 19" loading="lazy">
         </picture>
       </div>

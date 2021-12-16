@@ -22,7 +22,7 @@ if (menuItems) {
       evt.preventDefault();
       pageHeader.classList.remove('page--menu-open');
       document.getElementById(sectionId).scrollIntoView({
-        block: "start", behavior: "smooth"
+        block: 'start', behavior: 'smooth'
       });
     });
   }
